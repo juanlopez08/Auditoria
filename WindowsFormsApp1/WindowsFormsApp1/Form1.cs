@@ -17,6 +17,12 @@ namespace WindowsFormsApp1
             InitializeComponent();
         }
 
+        // VARIABLES GLOBALES
+        string nombreBD;
+        string user;
+        string password;
+
+
         private void label1_Click(object sender, EventArgs e)
         {
 
@@ -34,7 +40,37 @@ namespace WindowsFormsApp1
 
         private void button1_Click(object sender, EventArgs e)
         {
+            
+        }
 
+        private void tbNombre_TextChanged(object sender, EventArgs e)
+        {
+            nombreBD = tbNombre.Text;
+        }
+
+        private void btnRelaciones_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("BD> " + nombreBD + "\nuser> " + user + "\npass> " + password);
+        }
+
+        private void btnAnomaliasIntegridad_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnAnomaliasDatos_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tbUser_TextChanged(object sender, EventArgs e)
+        {
+            user = tbUser.Text;
+        }
+
+        private void tbPassword_TextChanged(object sender, EventArgs e)
+        {
+            password = tbPassword.Text;
         }
     }
 }

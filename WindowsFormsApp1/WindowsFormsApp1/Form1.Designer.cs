@@ -58,6 +58,7 @@ namespace WindowsFormsApp1
             this.tbNombre.Name = "tbNombre";
             this.tbNombre.Size = new System.Drawing.Size(217, 20);
             this.tbNombre.TabIndex = 1;
+            this.tbNombre.TextChanged += new System.EventHandler(this.tbNombre_TextChanged);
             // 
             // tbUser
             // 
@@ -65,6 +66,7 @@ namespace WindowsFormsApp1
             this.tbUser.Name = "tbUser";
             this.tbUser.Size = new System.Drawing.Size(217, 20);
             this.tbUser.TabIndex = 2;
+            this.tbUser.TextChanged += new System.EventHandler(this.tbUser_TextChanged);
             // 
             // tbPassword
             // 
@@ -72,6 +74,7 @@ namespace WindowsFormsApp1
             this.tbPassword.Name = "tbPassword";
             this.tbPassword.Size = new System.Drawing.Size(217, 20);
             this.tbPassword.TabIndex = 3;
+            this.tbPassword.TextChanged += new System.EventHandler(this.tbPassword_TextChanged);
             // 
             // label2
             // 
@@ -120,6 +123,7 @@ namespace WindowsFormsApp1
             this.btnRelaciones.TabIndex = 8;
             this.btnRelaciones.Text = "Relaciones de integridad referencial";
             this.btnRelaciones.UseVisualStyleBackColor = true;
+            this.btnRelaciones.Click += new System.EventHandler(this.btnRelaciones_Click);
             // 
             // btnAnomaliasIntegridad
             // 
@@ -129,6 +133,7 @@ namespace WindowsFormsApp1
             this.btnAnomaliasIntegridad.TabIndex = 9;
             this.btnAnomaliasIntegridad.Text = "Anomalías sobre integridad referencial";
             this.btnAnomaliasIntegridad.UseVisualStyleBackColor = true;
+            this.btnAnomaliasIntegridad.Click += new System.EventHandler(this.btnAnomaliasIntegridad_Click);
             // 
             // btnAnomaliasDatos
             // 
@@ -138,6 +143,7 @@ namespace WindowsFormsApp1
             this.btnAnomaliasDatos.TabIndex = 10;
             this.btnAnomaliasDatos.Text = "Anomalías de datos";
             this.btnAnomaliasDatos.UseVisualStyleBackColor = true;
+            this.btnAnomaliasDatos.Click += new System.EventHandler(this.btnAnomaliasDatos_Click);
             // 
             // Form1
             // 
