@@ -1,0 +1,10 @@
+C:\JUANCI\Universidad\8vo semestre\auditoria\integridad referencial\repo\Auditoria\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+C:\JUANCI\Universidad\8vo semestre\auditoria\integridad referencial\repo\Auditoria\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+C:\JUANCI\Universidad\8vo semestre\auditoria\integridad referencial\repo\Auditoria\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+C:\JUANCI\Universidad\8vo semestre\auditoria\integridad referencial\repo\Auditoria\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csprojAssemblyReference.cache
+C:\JUANCI\Universidad\8vo semestre\auditoria\integridad referencial\repo\Auditoria\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form1.resources
+C:\JUANCI\Universidad\8vo semestre\auditoria\integridad referencial\repo\Auditoria\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+C:\JUANCI\Universidad\8vo semestre\auditoria\integridad referencial\repo\Auditoria\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
+C:\JUANCI\Universidad\8vo semestre\auditoria\integridad referencial\repo\Auditoria\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
+C:\JUANCI\Universidad\8vo semestre\auditoria\integridad referencial\repo\Auditoria\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+C:\JUANCI\Universidad\8vo semestre\auditoria\integridad referencial\repo\Auditoria\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
