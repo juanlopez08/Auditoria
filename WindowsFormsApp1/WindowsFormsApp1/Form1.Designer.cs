@@ -30,16 +30,16 @@ namespace WindowsFormsApp1
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.tbNombre = new System.Windows.Forms.TextBox();
+            this.tbUser = new System.Windows.Forms.TextBox();
+            this.tbPassword = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.btnProbarConexion = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.btnRelaciones = new System.Windows.Forms.Button();
+            this.btnAnomaliasIntegridad = new System.Windows.Forms.Button();
+            this.btnAnomaliasDatos = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -52,26 +52,29 @@ namespace WindowsFormsApp1
             this.label1.Text = "Auditoría de Base de datos";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // textBox1
+            // tbNombre
             // 
-            this.textBox1.Location = new System.Drawing.Point(83, 39);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(217, 20);
-            this.textBox1.TabIndex = 1;
+            this.tbNombre.Location = new System.Drawing.Point(83, 39);
+            this.tbNombre.Name = "tbNombre";
+            this.tbNombre.Size = new System.Drawing.Size(217, 20);
+            this.tbNombre.TabIndex = 1;
+            this.tbNombre.TextChanged += new System.EventHandler(this.tbNombre_TextChanged);
             // 
-            // textBox2
+            // tbUser
             // 
-            this.textBox2.Location = new System.Drawing.Point(83, 65);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(217, 20);
-            this.textBox2.TabIndex = 2;
+            this.tbUser.Location = new System.Drawing.Point(83, 65);
+            this.tbUser.Name = "tbUser";
+            this.tbUser.Size = new System.Drawing.Size(217, 20);
+            this.tbUser.TabIndex = 2;
+            this.tbUser.TextChanged += new System.EventHandler(this.tbUser_TextChanged);
             // 
-            // textBox3
+            // tbPassword
             // 
-            this.textBox3.Location = new System.Drawing.Point(83, 91);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(217, 20);
-            this.textBox3.TabIndex = 3;
+            this.tbPassword.Location = new System.Drawing.Point(83, 91);
+            this.tbPassword.Name = "tbPassword";
+            this.tbPassword.Size = new System.Drawing.Size(217, 20);
+            this.tbPassword.TabIndex = 3;
+            this.tbPassword.TextChanged += new System.EventHandler(this.tbPassword_TextChanged);
             // 
             // label2
             // 
@@ -112,48 +115,51 @@ namespace WindowsFormsApp1
             this.btnProbarConexion.UseVisualStyleBackColor = true;
             this.btnProbarConexion.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button2
+            // btnRelaciones
             // 
-            this.button2.Location = new System.Drawing.Point(12, 179);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(113, 42);
-            this.button2.TabIndex = 8;
-            this.button2.Text = "Relaciones de integridad referencial";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnRelaciones.Location = new System.Drawing.Point(12, 179);
+            this.btnRelaciones.Name = "btnRelaciones";
+            this.btnRelaciones.Size = new System.Drawing.Size(113, 42);
+            this.btnRelaciones.TabIndex = 8;
+            this.btnRelaciones.Text = "Relaciones de integridad referencial";
+            this.btnRelaciones.UseVisualStyleBackColor = true;
+            this.btnRelaciones.Click += new System.EventHandler(this.btnRelaciones_Click);
             // 
-            // button3
+            // btnAnomaliasIntegridad
             // 
-            this.button3.Location = new System.Drawing.Point(137, 179);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(115, 42);
-            this.button3.TabIndex = 9;
-            this.button3.Text = "Anomalías sobre integridad referencial";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnAnomaliasIntegridad.Location = new System.Drawing.Point(137, 179);
+            this.btnAnomaliasIntegridad.Name = "btnAnomaliasIntegridad";
+            this.btnAnomaliasIntegridad.Size = new System.Drawing.Size(115, 42);
+            this.btnAnomaliasIntegridad.TabIndex = 9;
+            this.btnAnomaliasIntegridad.Text = "Anomalías sobre integridad referencial";
+            this.btnAnomaliasIntegridad.UseVisualStyleBackColor = true;
+            this.btnAnomaliasIntegridad.Click += new System.EventHandler(this.btnAnomaliasIntegridad_Click);
             // 
-            // button4
+            // btnAnomaliasDatos
             // 
-            this.button4.Location = new System.Drawing.Point(259, 179);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(97, 42);
-            this.button4.TabIndex = 10;
-            this.button4.Text = "Anomalías de datos";
-            this.button4.UseVisualStyleBackColor = true;
+            this.btnAnomaliasDatos.Location = new System.Drawing.Point(259, 179);
+            this.btnAnomaliasDatos.Name = "btnAnomaliasDatos";
+            this.btnAnomaliasDatos.Size = new System.Drawing.Size(97, 42);
+            this.btnAnomaliasDatos.TabIndex = 10;
+            this.btnAnomaliasDatos.Text = "Anomalías de datos";
+            this.btnAnomaliasDatos.UseVisualStyleBackColor = true;
+            this.btnAnomaliasDatos.Click += new System.EventHandler(this.btnAnomaliasDatos_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(368, 236);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.btnAnomaliasDatos);
+            this.Controls.Add(this.btnAnomaliasIntegridad);
+            this.Controls.Add(this.btnRelaciones);
             this.Controls.Add(this.btnProbarConexion);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.tbPassword);
+            this.Controls.Add(this.tbUser);
+            this.Controls.Add(this.tbNombre);
             this.Controls.Add(this.label1);
             this.Name = "Form1";
             this.Text = "Auditoría de BD";
@@ -165,16 +171,16 @@ namespace WindowsFormsApp1
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox tbNombre;
+        private System.Windows.Forms.TextBox tbUser;
+        private System.Windows.Forms.TextBox tbPassword;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button btnProbarConexion;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button btnRelaciones;
+        private System.Windows.Forms.Button btnAnomaliasIntegridad;
+        private System.Windows.Forms.Button btnAnomaliasDatos;
     }
 }
 
