@@ -54,7 +54,7 @@ namespace WindowsFormsApp1
             // 
             // tbNombre
             // 
-            this.tbNombre.Location = new System.Drawing.Point(83, 39);
+            this.tbNombre.Location = new System.Drawing.Point(83, 35);
             this.tbNombre.Name = "tbNombre";
             this.tbNombre.Size = new System.Drawing.Size(217, 20);
             this.tbNombre.TabIndex = 1;
@@ -62,7 +62,7 @@ namespace WindowsFormsApp1
             // 
             // tbUser
             // 
-            this.tbUser.Location = new System.Drawing.Point(83, 65);
+            this.tbUser.Location = new System.Drawing.Point(83, 67);
             this.tbUser.Name = "tbUser";
             this.tbUser.Size = new System.Drawing.Size(217, 20);
             this.tbUser.TabIndex = 2;
@@ -70,7 +70,7 @@ namespace WindowsFormsApp1
             // 
             // tbPassword
             // 
-            this.tbPassword.Location = new System.Drawing.Point(83, 91);
+            this.tbPassword.Location = new System.Drawing.Point(83, 100);
             this.tbPassword.Name = "tbPassword";
             this.tbPassword.Size = new System.Drawing.Size(217, 20);
             this.tbPassword.TabIndex = 3;
@@ -79,7 +79,7 @@ namespace WindowsFormsApp1
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(31, 68);
+            this.label2.Location = new System.Drawing.Point(28, 70);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(46, 13);
             this.label2.TabIndex = 4;
@@ -89,7 +89,7 @@ namespace WindowsFormsApp1
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(21, 94);
+            this.label3.Location = new System.Drawing.Point(21, 100);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(56, 13);
             this.label3.TabIndex = 5;
@@ -98,7 +98,7 @@ namespace WindowsFormsApp1
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(12, 42);
+            this.label4.Location = new System.Drawing.Point(12, 38);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(65, 13);
             this.label4.TabIndex = 6;
@@ -107,7 +107,7 @@ namespace WindowsFormsApp1
             // 
             // btnProbarConexion
             // 
-            this.btnProbarConexion.Location = new System.Drawing.Point(106, 130);
+            this.btnProbarConexion.Location = new System.Drawing.Point(107, 135);
             this.btnProbarConexion.Name = "btnProbarConexion";
             this.btnProbarConexion.Size = new System.Drawing.Size(155, 31);
             this.btnProbarConexion.TabIndex = 7;
@@ -117,7 +117,7 @@ namespace WindowsFormsApp1
             // 
             // btnRelaciones
             // 
-            this.btnRelaciones.Location = new System.Drawing.Point(12, 179);
+            this.btnRelaciones.Location = new System.Drawing.Point(12, 184);
             this.btnRelaciones.Name = "btnRelaciones";
             this.btnRelaciones.Size = new System.Drawing.Size(113, 42);
             this.btnRelaciones.TabIndex = 8;
@@ -127,7 +127,7 @@ namespace WindowsFormsApp1
             // 
             // btnAnomaliasIntegridad
             // 
-            this.btnAnomaliasIntegridad.Location = new System.Drawing.Point(137, 179);
+            this.btnAnomaliasIntegridad.Location = new System.Drawing.Point(137, 184);
             this.btnAnomaliasIntegridad.Name = "btnAnomaliasIntegridad";
             this.btnAnomaliasIntegridad.Size = new System.Drawing.Size(115, 42);
             this.btnAnomaliasIntegridad.TabIndex = 9;
@@ -137,7 +137,7 @@ namespace WindowsFormsApp1
             // 
             // btnAnomaliasDatos
             // 
-            this.btnAnomaliasDatos.Location = new System.Drawing.Point(259, 179);
+            this.btnAnomaliasDatos.Location = new System.Drawing.Point(259, 184);
             this.btnAnomaliasDatos.Name = "btnAnomaliasDatos";
             this.btnAnomaliasDatos.Size = new System.Drawing.Size(97, 42);
             this.btnAnomaliasDatos.TabIndex = 10;
@@ -149,7 +149,7 @@ namespace WindowsFormsApp1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(368, 236);
+            this.ClientSize = new System.Drawing.Size(370, 238);
             this.Controls.Add(this.btnAnomaliasDatos);
             this.Controls.Add(this.btnAnomaliasIntegridad);
             this.Controls.Add(this.btnRelaciones);

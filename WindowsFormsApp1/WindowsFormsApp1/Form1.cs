@@ -7,21 +7,26 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WindowsFormsApp1.Funciones;
 
 namespace WindowsFormsApp1
 {
     public partial class Form1 : Form
     {
+        DatabaseConnection db = new DatabaseConnection();
         public Form1()
         {
             InitializeComponent();
+            btnAnomaliasDatos.Enabled = false;
+            btnRelaciones.Enabled = false;
+            btnAnomaliasIntegridad.Enabled = false;
         }
 
         // VARIABLES GLOBALES
         string nombreBD;
         string user;
         string password;
-
+        bool connected;
 
         private void label1_Click(object sender, EventArgs e)
         {
@@ -40,7 +45,16 @@ namespace WindowsFormsApp1
 
         private void button1_Click(object sender, EventArgs e)
         {
-            
+            string[] args = {tbNombre.Text, tbUser.Text, tbPassword.Text};
+            connected = db.connect(args);
+            if (connected) { 
+                MessageBox.Show("Conexión establecida exitósamente!");
+                btnAnomaliasDatos.Enabled = true;
+                btnRelaciones.Enabled = true;
+                btnAnomaliasIntegridad.Enabled = true;
+            } else
+                MessageBox.Show("Conexión fallida, verifique los datos ingresados.");
+
         }
 
         private void tbNombre_TextChanged(object sender, EventArgs e)
