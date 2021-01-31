@@ -18,3 +18,14 @@ C:\Users\Nebelschwaden\Documents\Auditoría\Trabajo3\Auditoria\WindowsFormsApp1\
 C:\Users\Nebelschwaden\Documents\Auditoría\Trabajo3\Auditoria\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
 C:\Users\Nebelschwaden\Documents\Auditoría\Trabajo3\Auditoria\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
 C:\Users\Nebelschwaden\Documents\Auditoría\Trabajo3\Auditoria\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+C:\Users\MORALES\source\repos\Auditoria\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+C:\Users\MORALES\source\repos\Auditoria\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+C:\Users\MORALES\source\repos\Auditoria\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+C:\Users\MORALES\source\repos\Auditoria\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csprojAssemblyReference.cache
+C:\Users\MORALES\source\repos\Auditoria\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form1.resources
+C:\Users\MORALES\source\repos\Auditoria\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Lectura.resources
+C:\Users\MORALES\source\repos\Auditoria\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+C:\Users\MORALES\source\repos\Auditoria\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
+C:\Users\MORALES\source\repos\Auditoria\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
+C:\Users\MORALES\source\repos\Auditoria\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+C:\Users\MORALES\source\repos\Auditoria\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
