@@ -45,15 +45,22 @@ namespace WindowsFormsApp1
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string[] args = {tbNombre.Text, tbUser.Text, tbPassword.Text};
+            string[] args = { tbNombre.Text, tbUser.Text, tbPassword.Text };
             connected = db.connect(args);
-            if (connected) { 
+            if (connected)
+            {
                 MessageBox.Show("Conexión establecida exitósamente!");
                 btnAnomaliasDatos.Enabled = true;
                 btnRelaciones.Enabled = true;
                 btnAnomaliasIntegridad.Enabled = true;
-            } else
+            }
+            else
                 MessageBox.Show("Conexión fallida, verifique los datos ingresados.");
+
+            // SOLO ESTAN PARA PROBAR LOS BOTONES
+            btnAnomaliasDatos.Enabled = true;
+            btnRelaciones.Enabled = true;
+            btnAnomaliasIntegridad.Enabled = true;
 
         }
 
@@ -64,17 +71,23 @@ namespace WindowsFormsApp1
 
         private void btnRelaciones_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("BD> " + nombreBD + "\nuser> " + user + "\npass> " + password);
+            // MessageBox.Show("BD> " + nombreBD + "\nuser> " + user + "\npass> " + password);
+
+            Lectura lectura = new Lectura("Log Relaciones");
+            lectura.Show();
+
         }
 
         private void btnAnomaliasIntegridad_Click(object sender, EventArgs e)
         {
-
+            Lectura lectura = new Lectura("Log Anonalias Integridad");
+            lectura.Show();
         }
 
         private void btnAnomaliasDatos_Click(object sender, EventArgs e)
         {
-
+            Lectura lectura = new Lectura("Log Anomalias Datos");
+            lectura.Show();
         }
 
         private void tbUser_TextChanged(object sender, EventArgs e)

@@ -1,0 +1,31 @@
+﻿pubs,dbo,authors,UPKCL_auidind,PRIMARY KEY
+pubs,dbo,authors,CK__authors__au_id__24927208,CHECK
+pubs,dbo,authors,CK__authors__zip__267ABA7A,CHECK
+pubs,dbo,discounts,FK__discounts__stor___3C69FB99,FOREIGN KEY
+pubs,dbo,employee,FK__employee__job_id__48CFD27E,FOREIGN KEY
+pubs,dbo,employee,FK__employee__pub_id__4BAC3F29,FOREIGN KEY
+pubs,dbo,employee,PK_emp_id,PRIMARY KEY
+pubs,dbo,employee,CK_emp_id,CHECK
+pubs,dbo,jobs,CK__jobs__min_lvl__403A8C7D,CHECK
+pubs,dbo,jobs,CK__jobs__max_lvl__412EB0B6,CHECK
+pubs,dbo,jobs,PK__jobs__6E32B6A558A2E077,PRIMARY KEY
+pubs,dbo,pub_info,UPKCL_pubinfo,PRIMARY KEY
+pubs,dbo,pub_info,FK__pub_info__pub_id__440B1D61,FOREIGN KEY
+pubs,dbo,publishers,CK__publisher__pub_i__29572725,CHECK
+pubs,dbo,publishers,UPKCL_pubind,PRIMARY KEY
+pubs,dbo,roysched,FK__roysched__title___3A81B327,FOREIGN KEY
+pubs,dbo,sales,FK__sales__stor_id__37A5467C,FOREIGN KEY
+pubs,dbo,sales,FK__sales__title_id__38996AB5,FOREIGN KEY
+pubs,dbo,sales,UPKCL_sales,PRIMARY KEY
+pubs,dbo,sales,UPKCL_sales,PRIMARY KEY
+pubs,dbo,sales,UPKCL_sales,PRIMARY KEY
+pubs,dbo,stores,UPK_storeid,PRIMARY KEY
+pubs,dbo,sysdiagrams,PK__sysdiagr__C2B05B615D41F4FA,PRIMARY KEY
+pubs,dbo,sysdiagrams,UK_principal_name,UNIQUE
+pubs,dbo,sysdiagrams,UK_principal_name,UNIQUE
+pubs,dbo,titleauthor,UPKCL_taind,PRIMARY KEY
+pubs,dbo,titleauthor,UPKCL_taind,PRIMARY KEY
+pubs,dbo,titleauthor,FK__titleauth__au_id__31EC6D26,FOREIGN KEY
+pubs,dbo,titleauthor,FK__titleauth__title__32E0915F,FOREIGN KEY
+pubs,dbo,titles,FK__titles__pub_id__2E1BDC42,FOREIGN KEY
+pubs,dbo,titles,UPKCL_titleidind,PRIMARY KEY
