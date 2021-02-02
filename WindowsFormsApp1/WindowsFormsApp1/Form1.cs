@@ -11,7 +11,7 @@ using WindowsFormsApp1.Funciones;
 
 namespace WindowsFormsApp1
 {
-    public partial class Main : Form
+    public partial class Form1 : Form
     {
         DatabaseConnection db = new DatabaseConnection();
         public Form1()
