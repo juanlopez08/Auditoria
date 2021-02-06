@@ -12,10 +12,12 @@ namespace WindowsFormsApp1
 {
     public partial class Lectura : Form
     {
-        public Lectura(String titulo)
+        public Lectura(String titulo, DataTable t1)
         {
             InitializeComponent();
             txtNombreLog.Text = titulo;
+            dataGridView1.DataSource = t1;
+
 
             // TXT UBICADO EN LA MISMA CARPETA DEL PROYECTO
             txtLog.Text = System.IO.File.ReadAllText("..\\..\\log.txt");
@@ -34,6 +36,21 @@ namespace WindowsFormsApp1
             //        txtLog.Text = System.IO.File.ReadAllText(dSelFichero.FileName);
             //    }
             //}
+        }
+
+        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 
