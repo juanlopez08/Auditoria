@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -90,73 +91,73 @@ namespace WindowsFormsApp1
         {
             db.openConnection();
 
-            SqlConnection conn = db.getConnection();                
+            //SqlConnection conn = db.getConnection();                
             //new SqlConnection(connectionStringGlobal);
             //conn.Open();
             string query = @"declare @esquemas TABLE (esquema varchar(64));
-insert into @esquemas select distinct table_schema from INFORMATION_SCHEMA.TABLES
+                    insert into @esquemas select distinct table_schema from INFORMATION_SCHEMA.TABLES
 
-declare @esquema varchar(64)
-declare cursor_esquemas cursor for
-select * from @esquemas
-open cursor_esquemas
-fetch next from cursor_esquemas into @esquema
+                    declare @esquema varchar(64)
+                    declare cursor_esquemas cursor for
+                    select * from @esquemas
+                    open cursor_esquemas
+                    fetch next from cursor_esquemas into @esquema
 
-WHILE @@FETCH_STATUS = 0
-BEGIN
-	DECLARE @fk VARCHAR(100)
-	DECLARE cursor_fk cursor for
-	select fks.name from
-	sys.foreign_key_columns fkcol
-	join sys.foreign_keys fks on fks.object_id = fkcol.constraint_object_id
-	join sys.tables t on t.object_id = fkcol.parent_object_id
-	join sys.schemas s on s.schema_id = t.schema_id
-	where s.name = @esquema
-	open cursor_fk
-	fetch next from cursor_fk into @fk
+                    WHILE @@FETCH_STATUS = 0
+                    BEGIN
+	                    DECLARE @fk VARCHAR(100)
+	                    DECLARE cursor_fk cursor for
+	                    select fks.name from
+	                    sys.foreign_key_columns fkcol
+	                    join sys.foreign_keys fks on fks.object_id = fkcol.constraint_object_id
+	                    join sys.tables t on t.object_id = fkcol.parent_object_id
+	                    join sys.schemas s on s.schema_id = t.schema_id
+	                    where s.name = @esquema
+	                    open cursor_fk
+	                    fetch next from cursor_fk into @fk
 
-	WHILE @@FETCH_STATUS = 0
-		BEGIN
-			declare @dbcc table(tabla varchar(128), restriccion varchar(128), anomalia varchar(max), esquema varchar(100))
-			insert into @dbcc(tabla,restriccion,anomalia)
-			exec('DBCC CHECKCONSTRAINTS(''' + @fk + ''')')
-			update @dbcc set esquema = @esquema
-			fetch next from cursor_fk into @fk
-		END
-		close cursor_fk
-		deallocate cursor_fk
+	                    WHILE @@FETCH_STATUS = 0
+		                    BEGIN
+			                    declare @dbcc table(tabla varchar(128), restriccion varchar(128), anomalia varchar(max), esquema varchar(100))
+			                    insert into @dbcc(tabla,restriccion,anomalia)
+			                    exec('DBCC CHECKCONSTRAINTS(''' + @fk + ''')')
+			                    update @dbcc set esquema = @esquema
+			                    fetch next from cursor_fk into @fk
+		                    END
+		                    close cursor_fk
+		                    deallocate cursor_fk
 
-	DECLARE @cc VARCHAR(100)
-	DECLARE cursor_cc cursor for
-	select cc.name from sys.check_constraints as cc
-	join sys.schemas as s on s.schema_id = cc.schema_id
-	where s.name = @esquema
-	open cursor_cc
-	fetch next from cursor_cc into @cc
+	                    DECLARE @cc VARCHAR(100)
+	                    DECLARE cursor_cc cursor for
+	                    select cc.name from sys.check_constraints as cc
+	                    join sys.schemas as s on s.schema_id = cc.schema_id
+	                    where s.name = @esquema
+	                    open cursor_cc
+	                    fetch next from cursor_cc into @cc
 
-	WHILE @@FETCH_STATUS = 0
-		BEGIN
-			insert into @dbcc(tabla,restriccion,anomalia)
-			exec('DBCC CHECKCONSTRAINTS(''' + @cc + ''')')
-			update @dbcc set esquema = @esquema
-			fetch next from cursor_cc into @cc
-		END
-		close cursor_cc
-		deallocate cursor_cc
+	                    WHILE @@FETCH_STATUS = 0
+		                    BEGIN
+			                    insert into @dbcc(tabla,restriccion,anomalia)
+			                    exec('DBCC CHECKCONSTRAINTS(''' + @cc + ''')')
+			                    update @dbcc set esquema = @esquema
+			                    fetch next from cursor_cc into @cc
+		                    END
+		                    close cursor_cc
+		                    deallocate cursor_cc
 	
 
-	select * from @dbcc
+	                    select * from @dbcc
 
 
-	delete from @dbcc
+	                    delete from @dbcc
 
-	fetch next from cursor_esquemas into @esquema
+	                    fetch next from cursor_esquemas into @esquema
 
-END
-close cursor_esquemas 
-deallocate cursor_esquemas";
+                    END
+                    close cursor_esquemas 
+                    deallocate cursor_esquemas";
 
-            SqlCommand cmd = new SqlCommand(query, conn);
+            SqlCommand cmd = new SqlCommand(query, db.getConnection());
 
             DataTable t1 = new DataTable();
             using (SqlDataAdapter a = new SqlDataAdapter(cmd))
@@ -164,11 +165,27 @@ deallocate cursor_esquemas";
                 a.Fill(t1);
             }
             dtRelationships = t1;
-           
+
+            StreamWriter sw = new StreamWriter("..\\..\\log.txt"); //create the file
+            foreach (DataRow dr in t1.Rows)
+            {
+                string line = "En la tabla " + dr["tabla"].ToString() + ";";
+                line += " con la restriccion " + dr["restriccion"].ToString() + ";";
+                line += " tiene la anomalia: " + dr["anomalia"].ToString() + ";";
+                //and so on
+                sw.WriteLine(line); //write data
+                
+            }
+            sw.Close();
+
+            db.closeConnection();
+
             Lectura lectura = new Lectura("Log Anomalias Datos", t1);
             lectura.Show();
-
+            
         }
+
+            
 
         private void tbUser_TextChanged(object sender, EventArgs e)
         {
