@@ -1,3 +1,4 @@
+En la tabla [dbo].[pub_info]; con la restriccion [FK__pub_info__pub_id__440B1D61]; tiene la anomalia: [pub_id] = '9903';
 En la tabla [dbo].[authors]; con la restriccion [CK__authors__zip__267ABA7A]; tiene la anomalia: [zip] = '0';
 En la tabla [dbo].[authors]; con la restriccion [CK__authors__zip__267ABA7A]; tiene la anomalia: [zip] = '1';
 En la tabla [dbo].[authors]; con la restriccion [CK__authors__zip__267ABA7A]; tiene la anomalia: [zip] = '2';

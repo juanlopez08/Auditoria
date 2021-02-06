@@ -51,7 +51,7 @@ namespace WindowsFormsApp1
             connected = db.connect(args);
             if (connected)
             {
-                MessageBox.Show("Conexión establecida exitósamente!");
+                MessageBox.Show("Conexión establecida exitosamente!");
                 btnAnomaliasDatos.Enabled = true;
                 btnRelaciones.Enabled = true;
                 btnAnomaliasIntegridad.Enabled = true;
@@ -60,9 +60,9 @@ namespace WindowsFormsApp1
                 MessageBox.Show("Conexión fallida, verifique los datos ingresados.");
 
             // SOLO ESTAN PARA PROBAR LOS BOTONES
-            btnAnomaliasDatos.Enabled = true;
-            btnRelaciones.Enabled = true;
-            btnAnomaliasIntegridad.Enabled = true;
+            //btnAnomaliasDatos.Enabled = true;
+            //btnRelaciones.Enabled = true;
+            //btnAnomaliasIntegridad.Enabled = true;
 
         }
 
