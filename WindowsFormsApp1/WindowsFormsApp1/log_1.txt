@@ -1,0 +1,51 @@
+
+Existe relación entre authors y titleauthor con la columna au_id.
+Existe relación correspondiente para la columna au_id. Su constraint es: FK__titleauth__au_id__30F848ED
+ 
+Existe relación entre jobs y employee con la columna job_id.
+Existe relación correspondiente para la columna job_id. Su constraint es: FK__employee__job_id__47DBAE45
+ 
+Hay una coincidencia entre pub_info y publishers con la columna pub_id pero no existe ninguna relación entre ambas tablas. Se revisarán triggers.
+Hay una coincidencia entre pub_info y titles con la columna pub_id pero no existe ninguna relación entre ambas tablas. Se revisarán triggers.
+Hay una coincidencia entre pub_info y employee con la columna pub_id pero no existe ninguna relación entre ambas tablas. Se revisarán triggers.
+Hay una coincidencia entre pub_info y titleview con la columna pub_id pero no existe ninguna relación entre ambas tablas. Se revisarán triggers.
+Existe relación entre publishers y titles con la columna pub_id.
+Existe relación correspondiente para la columna pub_id. Su constraint es: FK__titles__pub_id__2D27B809
+ 
+Hay una coincidencia entre publishers y pub_info con la columna pub_id pero no existe ninguna relación entre ambas tablas. Se revisarán triggers.
+Existe relación entre publishers y employee con la columna pub_id.
+Existe relación correspondiente para la columna pub_id. Su constraint es: FK__employee__pub_id__4AB81AF0
+ 
+Hay una coincidencia entre publishers y titleview con la columna pub_id pero no existe ninguna relación entre ambas tablas. Se revisarán triggers.
+Existe relación entre sales y stores con la columna stor_id.
+Existe relación correspondiente para la columna stor_id. Su constraint es: FK__sales__stor_id__36B12243
+ 
+Hay una coincidencia entre sales y discounts con la columna stor_id pero no existe ninguna relación entre ambas tablas. Se revisarán triggers.
+Existe relación entre sales y titles con la columna title_id.
+Existe relación correspondiente para la columna title_id. Su constraint es: FK__sales__title_id__37A5467C
+ 
+Hay una coincidencia entre sales y titleauthor con la columna title_id pero no existe ninguna relación entre ambas tablas. Se revisarán triggers.
+Hay una coincidencia entre sales y roysched con la columna title_id pero no existe ninguna relación entre ambas tablas. Se revisarán triggers.
+Existe relación entre stores y sales con la columna stor_id.
+Existe relación correspondiente para la columna stor_id. Su constraint es: FK__sales__stor_id__36B12243
+ 
+Existe relación entre stores y discounts con la columna stor_id.
+Existe relación correspondiente para la columna stor_id. Su constraint es: FK__discounts__stor___3B75D760
+ 
+Existe relación entre titleauthor y authors con la columna au_id.
+Existe relación correspondiente para la columna au_id. Su constraint es: FK__titleauth__au_id__30F848ED
+ 
+Existe relación entre titleauthor y titles con la columna title_id.
+Existe relación correspondiente para la columna title_id. Su constraint es: FK__titleauth__title__31EC6D26
+ 
+Hay una coincidencia entre titleauthor y sales con la columna title_id pero no existe ninguna relación entre ambas tablas. Se revisarán triggers.
+Hay una coincidencia entre titleauthor y roysched con la columna title_id pero no existe ninguna relación entre ambas tablas. Se revisarán triggers.
+Existe relación entre titles y titleauthor con la columna title_id.
+Existe relación correspondiente para la columna title_id. Su constraint es: FK__titleauth__title__31EC6D26
+ 
+Existe relación entre titles y sales con la columna title_id.
+Existe relación correspondiente para la columna title_id. Su constraint es: FK__sales__title_id__37A5467C
+ 
+Existe relación entre titles y roysched con la columna title_id.
+Existe relación correspondiente para la columna title_id. Su constraint es: FK__roysched__title___398D8EEE
+ 

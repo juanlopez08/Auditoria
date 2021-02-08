@@ -30,3 +30,4 @@ C:\Users\MORALES\source\repos\Auditoria\WindowsFormsApp1\WindowsFormsApp1\obj\De
 C:\Users\MORALES\source\repos\Auditoria\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
 C:\JUANCI\Universidad\8vo semestre\auditoria\integridad referencial\repo\Auditoria\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Lectura.resources
 C:\JUANCI\Universidad\8vo semestre\auditoria\integridad referencial\repo\Auditoria\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form1.resources
+C:\Users\Nebelschwaden\Documents\Auditoría\Trabajo3\Auditoria\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Lectura.resources
