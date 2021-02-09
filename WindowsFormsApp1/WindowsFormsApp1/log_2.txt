@@ -1,9 +1,7 @@
 
-No existe relación ni potenciales triggers de relación para las tablas pub_info y publishers con respecto a la columna de clave primaria pub_id. Se trata de una POTENCIAL ANOMALÍA.
 No existe relación ni potenciales triggers de relación para las tablas pub_info y titles con respecto a la columna de clave primaria pub_id. Se trata de una POTENCIAL ANOMALÍA.
 No existe relación ni potenciales triggers de relación para las tablas pub_info y employee con respecto a la columna de clave primaria pub_id. Se trata de una POTENCIAL ANOMALÍA.
 No existe relación ni potenciales triggers de relación para las tablas pub_info y titleview con respecto a la columna de clave primaria pub_id. Se trata de una POTENCIAL ANOMALÍA.
-No existe relación ni potenciales triggers de relación para las tablas publishers y pub_info con respecto a la columna de clave primaria pub_id. Se trata de una POTENCIAL ANOMALÍA.
 No existe relación ni potenciales triggers de relación para las tablas publishers y titleview con respecto a la columna de clave primaria pub_id. Se trata de una POTENCIAL ANOMALÍA.
 No existe relación ni potenciales triggers de relación para las tablas sales y discounts con respecto a la columna de clave primaria stor_id. Se trata de una POTENCIAL ANOMALÍA.
 No existe relación ni potenciales triggers de relación para las tablas sales y titleauthor con respecto a la columna de clave primaria title_id. Se trata de una POTENCIAL ANOMALÍA.

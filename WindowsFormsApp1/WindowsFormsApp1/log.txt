@@ -1,2 +1,4 @@
-En la tabla [dbo].[employee]; con la restricciín [FK__employee__job_id__47DBAE45]; tiene la anomalía: [job_id] = '15';
-En la tabla [dbo].[employee]; con la restricciín [FK__employee__pub_id__4AB81AF0]; tiene la anomalía: [pub_id] = '9951';
+En la tabla [dbo].[pub_info]; con la restricciín [FK__pub_info__pub_id__440B1D61]; tiene la anomalía: [pub_id] = '9903';
+En la tabla [dbo].[authors]; con la restricciín [CK__authors__zip__267ABA7A]; tiene la anomalía: [zip] = '0';
+En la tabla [dbo].[authors]; con la restricciín [CK__authors__zip__267ABA7A]; tiene la anomalía: [zip] = '1';
+En la tabla [dbo].[authors]; con la restricciín [CK__authors__zip__267ABA7A]; tiene la anomalía: [zip] = '2';
